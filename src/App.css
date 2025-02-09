@@ -1,0 +1,148 @@
+/* Общие стили */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.store-container {
+  max-width: 900px;
+  padding: 20px;
+  text-align: center;
+}
+
+.store-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #9e15fa;
+}
+
+
+.game-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.game-card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 560px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+}
+
+.game-title {
+  font-size: 1.4rem;
+  color: #9e15fa;
+  margin-bottom: 10px;
+}
+
+.game-description,
+.game-version,
+.game-developer,
+.game-publisher,
+.game-release-date,
+.game-rating,
+.game-price {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-bottom: 5px;
+}
+
+.game-img img{
+  height: 150px;
+  width: 250px;
+  border-radius: 8px;
+}
+
+
+.game-tags {
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #333;
+  color: #9e15fa;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.restricted {
+  color: red;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+}
+
+
+
+.adult-check {
+  text-align: center;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.adult-check h2 {
+  margin-bottom: 15px;
+}
+
+.adult-check-btn {
+  background-color: #9e15fa;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.adult-check-btn:hover {
+  background-color: #7f21bd;
+}
+
+.loading {
+  font-size: 1.5rem;
+  color: #9e15fa;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.add-to-cart-btn{
+  margin-top: 18px;
+  padding: 10px 12px;
+  border: none;
+  background-color: #9e15fa;
+  color: white;
+  font-size: 15px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.add-to-cart-btn:hover{
+  background-color: #7f21bd;
+  transition: all .5s ease;
+}
