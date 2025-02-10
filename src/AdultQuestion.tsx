@@ -15,7 +15,7 @@ const AdultOrNot: FC<AdultOrNotProps> = ({ setIsAdult }) => {
 
   return (
       <div className="adult-check">
-          <h2>Are You 18 years old?</h2>
+          <h2>Are You 18+ years old?</h2>
           <button onClick={yesHandler} className="adult-check-btn">Yes</button>
           <button onClick={noHandler} className="adult-check-btn">No</button>
       </div>
