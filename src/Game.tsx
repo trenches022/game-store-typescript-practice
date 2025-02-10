@@ -1,11 +1,19 @@
 import { FC } from "react";
 import { GameFromServer } from "./data";
+import useCart from "./store/useCart";
 
 interface GameProps {
   game: GameFromServer;
 }
 
 const Game: FC<GameProps> = ({ game }) => {
+
+  const { addToCart }: any = useCart();
+
+  const addToCartHandler = () => {
+    addToCart(game); 
+  }
+
   return (
     <div className="game-card">
       <h2 className="game-title">{game.name}</h2>
@@ -24,7 +32,7 @@ const Game: FC<GameProps> = ({ game }) => {
           {game.tags.map(tag => <span key={tag} className="tag">{tag}</span>)}
         </div>
       )}
-      <button className="add-to-cart-btn">Add to cart</button>
+      <button className="add-to-cart-btn" onClick={addToCartHandler}>Add to cart</button>
     </div>
   );
 };
