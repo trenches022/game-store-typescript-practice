@@ -1,50 +1,33 @@
-# React + TypeScript + Vite
+# 🎮 React + TS practice (Simple Game Store)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Game Store is a digital game store built with React + TypeScript. The project includes essential e-commerce features such as a product catalog, a shopping cart, navigation, and a responsive design.
 
-Currently, two official plugins are available:
+![Game Store Screenshot](https://raw.githubusercontent.com/trenches022/game-store-typescript-practice/main/game-store-screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#  Key Features
 
-## Expanding the ESLint configuration
+✅ View a list of available games
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+✅ Add games to the shopping cart
 
-- Configure the top-level `parserOptions` property like this:
+✅ Remove games from the cart
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+✅ Dynamic price calculation
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+✅ Save cart state in localStorage
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+✅ Responsive and modern UI
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+
+# 🛠 Technologies Used:
+
+<a href="https://reactjs.org/" target="_blank"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="23" height="23" alt="React" /></a> React.js – Frontend framework
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="23" height="23" alt="JavaScript" /></a> TypeScript – Core language
+
+<a href="https://vitejs.dev/" target="_blank"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg" width="23" height="23" alt="Vite" /></a> Vite – Fast development environment
+
+<a href="https://docs.pmnd.rs/zustand/getting-started/introduction" target="_blank"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="23" height="23" alt="Zustand" /></a> Zustand – Lightweight global state management
+
+<a href="https://fontawesome.com/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjoAY1yvW2TRRXFVU1Hcf0h6MfFH0AXDS2Jg&s" width="23" height="23" alt="Font Awesome" /></a> Font Awesome – Icon library for UI elements
+
